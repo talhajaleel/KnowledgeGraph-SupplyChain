@@ -1,0 +1,570 @@
+{
+  "nodes": [
+    {
+      "id": "Supplier1",
+      "type": "Supplier",
+      "name": "Global Raw Materials Inc.",
+      "attributes": {
+        "location": "Country A",
+        "materialsSupplied": ["RawMaterial1", "RawMaterial2"]
+      }
+    },
+    {
+      "id": "Supplier2",
+      "type": "Supplier",
+      "name": "Eco Metals Ltd.",
+      "attributes": {
+        "location": "Country B",
+        "materialsSupplied": ["RawMaterial3"]
+      }
+    },
+    {
+      "id": "Supplier3",
+      "type": "Supplier",
+      "name": "Chemical Supplies Co.",
+      "attributes": {
+        "location": "Country C",
+        "materialsSupplied": ["RawMaterial4"]
+      }
+    },
+    {
+      "id": "Manufacturer1",
+      "type": "Manufacturer",
+      "name": "Quality Manufacturing Co.",
+      "attributes": {
+        "location": "Country D",
+        "productsManufactured": ["ProductA", "ProductB"]
+      }
+    },
+    {
+      "id": "Manufacturer2",
+      "type": "Manufacturer",
+      "name": "TechGadgets Corp.",
+      "attributes": {
+        "location": "Country E",
+        "productsManufactured": ["ProductC"]
+      }
+    },
+    {
+      "id": "Manufacturer3",
+      "type": "Manufacturer",
+      "name": "Eco Devices Ltd.",
+      "attributes": {
+        "location": "Country F",
+        "productsManufactured": ["ProductD"]
+      }
+    },
+    {
+      "id": "Distributor1",
+      "type": "Distributor",
+      "name": "Efficient Logistics Ltd.",
+      "attributes": {
+        "location": "Country G",
+        "distributionRegions": ["Region1", "Region2"]
+      }
+    },
+    {
+      "id": "Distributor2",
+      "type": "Distributor",
+      "name": "Global Distributors Inc.",
+      "attributes": {
+        "location": "Country H",
+        "distributionRegions": ["Region3"]
+      }
+    },
+    {
+      "id": "Distributor3",
+      "type": "Distributor",
+      "name": "Regional Supplies Co.",
+      "attributes": {
+        "location": "Country I",
+        "distributionRegions": ["Region4", "Region5"]
+      }
+    },
+    {
+      "id": "Retailer1",
+      "type": "Retailer",
+      "name": "RetailCore",
+      "attributes": {
+        "location": "Country J",
+        "storeCount": 50,
+        "ecommercePlatform": true
+      }
+    },
+    {
+      "id": "Retailer2",
+      "type": "Retailer",
+      "name": "ElectroMart",
+      "attributes": {
+        "location": "Country K",
+        "storeCount": 30,
+        "ecommercePlatform": false
+      }
+    },
+    {
+      "id": "Retailer3",
+      "type": "Retailer",
+      "name": "HomeGoods Superstore",
+      "attributes": {
+        "location": "Country L",
+        "storeCount": 20,
+        "ecommercePlatform": true
+      }
+    },
+    {
+      "id": "Customer1",
+      "type": "Customer",
+      "name": "John Doe",
+      "attributes": {
+        "location": "City X",
+        "customerType": "Individual"
+      }
+    },
+    {
+      "id": "Customer2",
+      "type": "Customer",
+      "name": "ABC Enterprises",
+      "attributes": {
+        "location": "City Y",
+        "customerType": "Business"
+      }
+    },
+    {
+      "id": "Customer3",
+      "type": "Customer",
+      "name": "Jane Smith",
+      "attributes": {
+        "location": "City Z",
+        "customerType": "Individual"
+      }
+    },
+    {
+      "id": "ProductA",
+      "type": "Product",
+      "name": "High-Quality Widget",
+      "attributes": {
+        "category": "Electronics",
+        "price": 99.99,
+        "SKU": "HW-1001"
+      }
+    },
+    {
+      "id": "ProductB",
+      "type": "Product",
+      "name": "Smart Gadget",
+      "attributes": {
+        "category": "Electronics",
+        "price": 149.99,
+        "SKU": "SG-2002"
+      }
+    },
+    {
+      "id": "ProductC",
+      "type": "Product",
+      "name": "Eco-Friendly Device",
+      "attributes": {
+        "category": "Home Appliances",
+        "price": 79.99,
+        "SKU": "ED-3003"
+      }
+    },
+    {
+      "id": "ProductD",
+      "type": "Product",
+      "name": "Recycled Material Toy",
+      "attributes": {
+        "category": "Toys",
+        "price": 29.99,
+        "SKU": "RT-4004"
+      }
+    },
+    {
+      "id": "Transport1",
+      "type": "Transport",
+      "name": "Freight Carrier",
+      "attributes": {
+        "mode": "Truck",
+        "capacity": "20 Tons"
+      }
+    },
+    {
+      "id": "Transport2",
+      "type": "Transport",
+      "name": "Ocean Shipping Co.",
+      "attributes": {
+        "mode": "Ship",
+        "capacity": "2000 TEU"
+      }
+    },
+    {
+      "id": "Transport3",
+      "type": "Transport",
+      "name": "Air Express",
+      "attributes": {
+        "mode": "Airplane",
+        "capacity": "50 Tons"
+      }
+    },
+    {
+      "id": "Warehouse1",
+      "type": "Warehouse",
+      "name": "Central Distribution Center",
+      "attributes": {
+        "location": "Country G",
+        "storageCapacity": "50000 sq ft"
+      }
+    },
+    {
+      "id": "Warehouse2",
+      "type": "Warehouse",
+      "name": "Regional Warehouse",
+      "attributes": {
+        "location": "Country J",
+        "storageCapacity": "20000 sq ft"
+      }
+    },
+    {
+      "id": "Warehouse3",
+      "type": "Warehouse",
+      "name": "Overseas Storage Facility",
+      "attributes": {
+        "location": "Country H",
+        "storageCapacity": "30000 sq ft"
+      }
+    },
+    {
+      "id": "RawMaterial1",
+      "type": "Material",
+      "name": "Aluminum",
+      "attributes": {
+        "grade": "6061-T6",
+        "unitPrice": 1.50
+      }
+    },
+    {
+      "id": "RawMaterial2",
+      "type": "Material",
+      "name": "Plastic Resin",
+      "attributes": {
+        "type": "Polypropylene",
+        "unitPrice": 0.80
+      }
+    },
+    {
+      "id": "RawMaterial3",
+      "type": "Material",
+      "name": "Recycled Steel",
+      "attributes": {
+        "grade": "A36",
+        "unitPrice": 1.20
+      }
+    },
+    {
+      "id": "RawMaterial4",
+      "type": "Material",
+      "name": "Chemical Coating",
+      "attributes": {
+        "type": "Non-toxic Paint",
+        "unitPrice": 2.00
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "Edge1",
+      "source": "Supplier1",
+      "target": "Manufacturer1",
+      "relationship": "supplies",
+      "attributes": {
+        "materials": ["RawMaterial1", "RawMaterial2"],
+        "contractID": "C-001",
+        "deliverySchedule": "Weekly"
+      }
+    },
+    {
+      "id": "Edge2",
+      "source": "Supplier2",
+      "target": "Manufacturer2",
+      "relationship": "supplies",
+      "attributes": {
+        "materials": ["RawMaterial3"],
+        "contractID": "C-002",
+        "deliverySchedule": "Bi-weekly"
+      }
+    },
+    {
+      "id": "Edge3",
+      "source": "Supplier3",
+      "target": "Manufacturer3",
+      "relationship": "supplies",
+      "attributes": {
+        "materials": ["RawMaterial4"],
+        "contractID": "C-003",
+        "deliverySchedule": "Monthly"
+      }
+    },
+    {
+      "id": "Edge4",
+      "source": "Manufacturer1",
+      "target": "ProductA",
+      "relationship": "produces",
+      "attributes": {
+        "productionCapacityPerMonth": 5000,
+        "qualityStandards": ["ISO 9001", "ISO 14001"]
+      }
+    },
+    {
+      "id": "Edge5",
+      "source": "Manufacturer1",
+      "target": "ProductB",
+      "relationship": "produces",
+      "attributes": {
+        "productionCapacityPerMonth": 3000,
+        "qualityStandards": ["ISO 9001"]
+      }
+    },
+    {
+      "id": "Edge6",
+      "source": "Manufacturer2",
+      "target": "ProductC",
+      "relationship": "produces",
+      "attributes": {
+        "productionCapacityPerMonth": 4000,
+        "qualityStandards": ["ISO 9001", "ISO 14001"]
+      }
+    },
+    {
+      "id": "Edge7",
+      "source": "Manufacturer3",
+      "target": "ProductD",
+      "relationship": "produces",
+      "attributes": {
+        "productionCapacityPerMonth": 6000,
+        "qualityStandards": ["ISO 9001", "ISO 45001"]
+      }
+    },
+    {
+      "id": "Edge8",
+      "source": "Manufacturer1",
+      "target": "Distributor1",
+      "relationship": "ships_to",
+      "attributes": {
+        "shippingTerms": "FOB",
+        "transport": "Transport1",
+        "leadTime": "5 days"
+      }
+    },
+    {
+      "id": "Edge9",
+      "source": "Manufacturer2",
+      "target": "Distributor2",
+      "relationship": "ships_to",
+      "attributes": {
+        "shippingTerms": "CIF",
+        "transport": "Transport2",
+        "leadTime": "15 days"
+      }
+    },
+    {
+      "id": "Edge10",
+      "source": "Manufacturer3",
+      "target": "Distributor3",
+      "relationship": "ships_to",
+      "attributes": {
+        "shippingTerms": "EXW",
+        "transport": "Transport3",
+        "leadTime": "3 days"
+      }
+    },
+    {
+      "id": "Edge11",
+      "source": "Distributor1",
+      "target": "Warehouse1",
+      "relationship": "stores_at",
+      "attributes": {
+        "storageDuration": "Average 2 weeks"
+      }
+    },
+    {
+      "id": "Edge12",
+      "source": "Warehouse1",
+      "target": "Retailer1",
+      "relationship": "distributes_to",
+      "attributes": {
+        "distributionChannel": "Wholesale",
+        "frequency": "Weekly"
+      }
+    },
+    {
+      "id": "Edge13",
+      "source": "Distributor2",
+      "target": "Warehouse3",
+      "relationship": "stores_at",
+      "attributes": {
+        "storageDuration": "Average 1 month"
+      }
+    },
+    {
+      "id": "Edge14",
+      "source": "Warehouse3",
+      "target": "Retailer2",
+      "relationship": "distributes_to",
+      "attributes": {
+        "distributionChannel": "Direct",
+        "frequency": "Monthly"
+      }
+    },
+    {
+      "id": "Edge15",
+      "source": "Distributor3",
+      "target": "Retailer3",
+      "relationship": "distributes_to",
+      "attributes": {
+        "distributionChannel": "Regional",
+        "frequency": "Bi-weekly"
+      }
+    },
+    {
+      "id": "Edge16",
+      "source": "Retailer1",
+      "target": "Customer1",
+      "relationship": "sells_to",
+      "attributes": {
+        "salesChannel": "Online",
+        "purchaseDate": "2024-10-03",
+        "orderID": "ORD-10001"
+      }
+    },
+    {
+      "id": "Edge17",
+      "source": "Retailer2",
+      "target": "Customer2",
+      "relationship": "sells_to",
+      "attributes": {
+        "salesChannel": "In-Store",
+        "purchaseDate": "2024-10-02",
+        "orderID": "ORD-20002"
+      }
+    },
+    {
+      "id": "Edge18",
+      "source": "Retailer3",
+      "target": "Customer3",
+      "relationship": "sells_to",
+      "attributes": {
+        "salesChannel": "Online",
+        "purchaseDate": "2024-10-01",
+        "orderID": "ORD-30003"
+      }
+    },
+    {
+      "id": "Edge19",
+      "source": "Transport1",
+      "target": "Distributor1",
+      "relationship": "delivers_goods",
+      "attributes": {
+        "route": "Route A",
+        "deliveryDate": "2024-10-01"
+      }
+    },
+    {
+      "id": "Edge20",
+      "source": "Transport2",
+      "target": "Distributor2",
+      "relationship": "delivers_goods",
+      "attributes": {
+        "route": "Ocean Route B",
+        "deliveryDate": "2024-09-25"
+      }
+    },
+    {
+      "id": "Edge21",
+      "source": "Transport3",
+      "target": "Distributor3",
+      "relationship": "delivers_goods",
+      "attributes": {
+        "route": "Air Route C",
+        "deliveryDate": "2024-10-02"
+      }
+    },
+    {
+      "id": "Edge22",
+      "source": "Supplier1",
+      "target": "RawMaterial1",
+      "relationship": "provides",
+      "attributes": {}
+    },
+    {
+      "id": "Edge23",
+      "source": "Supplier1",
+      "target": "RawMaterial2",
+      "relationship": "provides",
+      "attributes": {}
+    },
+    {
+      "id": "Edge24",
+      "source": "Supplier2",
+      "target": "RawMaterial3",
+      "relationship": "provides",
+      "attributes": {}
+    },
+    {
+      "id": "Edge25",
+      "source": "Supplier3",
+      "target": "RawMaterial4",
+      "relationship": "provides",
+      "attributes": {}
+    },
+    {
+      "id": "Edge26",
+      "source": "Warehouse1",
+      "target": "Warehouse2",
+      "relationship": "transfers_goods_to",
+      "attributes": {
+        "transport": "Transport1",
+        "frequency": "Weekly"
+      }
+    },
+    {
+      "id": "Edge27",
+      "source": "Warehouse2",
+      "target": "Retailer1",
+      "relationship": "supplies",
+      "attributes": {
+        "deliverySchedule": "Daily",
+        "transport": "Local Trucks"
+      }
+    },
+    {
+      "id": "Edge28",
+      "source": "Customer2",
+      "target": "ProductC",
+      "relationship": "purchases",
+      "attributes": {
+        "quantity": 100,
+        "purchaseDate": "2024-10-02",
+        "orderID": "ORD-20002"
+      }
+    },
+    {
+      "id": "Edge29",
+      "source": "Customer3",
+      "target": "ProductD",
+      "relationship": "purchases",
+      "attributes": {
+        "quantity": 2,
+        "purchaseDate": "2024-10-01",
+        "orderID": "ORD-30003"
+      }
+    },
+    {
+      "id": "Edge30",
+      "source": "Manufacturer2",
+      "target": "Warehouse3",
+      "relationship": "stores_at",
+      "attributes": {
+        "storageDuration": "Average 3 weeks"
+      }
+    }
+  ]
+}
